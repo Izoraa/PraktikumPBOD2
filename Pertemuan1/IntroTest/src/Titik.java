@@ -21,7 +21,7 @@ public class Titik {
     }
     //Mengembalikan nilai Ordinat
     double getOrdinat(){
-        return Ordinat;
+        return ordinat;
     }
 
     //Mengeset absis titik dengan nilai baru x

@@ -1,3 +1,8 @@
+/* Nama File        : MGaris.java
+ * Deskripsi        : berisi Main untuk class garis
+ * Pembuat          : Izzatu Khoirul Fata/24060124120039
+ * Tanggal          : 1 Maret 2026 */
+
 public class MGaris {
 
     public static void main(String[] args) {

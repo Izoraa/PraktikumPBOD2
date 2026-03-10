@@ -1,3 +1,8 @@
+/* Nama File        : Main.java
+ * Deskripsi        : berisi Main dari Bangun Datar yang dibuat
+ * Pembuat          : Izzatu Khoirul Fata/24060124120039
+ * Tanggal          : 10 Maret 2026 */
+
 public class Main {
     public static void main(String[] args) {
 

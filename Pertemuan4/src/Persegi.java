@@ -1,3 +1,8 @@
+/* Nama File        : Persegi.java
+ * Deskripsi        : berisi atribut dan metode dalam class Persegi
+ * Pembuat          : Izzatu Khoirul Fata/24060124120039
+ * Tanggal          : 10 MAret 2026 */
+
 public class Persegi extends BangunDatar{
     private double sisi;
 

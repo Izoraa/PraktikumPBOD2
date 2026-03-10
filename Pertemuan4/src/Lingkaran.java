@@ -1,3 +1,8 @@
+/* Nama File        : Lingkaran.java
+ * Deskripsi        : berisi atribut dan metode dalam class Lingkaran
+ * Pembuat          : Izzatu Khoirul Fata/24060124120039
+ * Tanggal          : 10 MAret 2026 */
+
 public class Lingkaran extends BangunDatar{
     private double jari;
 

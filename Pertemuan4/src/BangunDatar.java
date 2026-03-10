@@ -1,3 +1,8 @@
+/* Nama File        : BAngunDatar.java
+ * Deskripsi        : berisi atribut dan metode dalam class BAngun Datar
+ * Pembuat          : Izzatu Khoirul Fata/24060124120039
+ * Tanggal          : 10 MAret 2026 */
+
 public class BangunDatar {
     protected int jmlSisi;
     protected String warna;

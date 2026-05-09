@@ -1,3 +1,9 @@
+/**
+ * File         : Main.java
+ * Deskripsi    : Kelas utamauntuk menguji Class Piaraan dan Anabul serta turunannya
+ *Nama/NIM      : Izzatu Khoirul Fata / 24060124120039
+ *Tanggal       : 5 Mei 2026
+ */
 public class Main {
     public static void main(String[] args) {
 

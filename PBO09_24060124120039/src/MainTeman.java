@@ -1,3 +1,10 @@
+/**
+ * File         : MainTeman.java
+ * Deskripsi    : Kelas utama untuk menguji Class Teman
+ *Nama/NIM      : Izzatu Khoirul Fata / 24060124120039
+ *Tanggal       : 5 Mei 2026
+ */
+
 public class MainTeman {
     public static void main(String[] args) {
         Teman<String> t = new Teman();

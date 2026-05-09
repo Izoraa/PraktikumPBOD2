@@ -1,3 +1,10 @@
+/**
+ * File         : Piaraan.java
+ * Deskripsi    : Berisi Class Piaraan beserta atribut dan methodenya
+ *Nama/NIM      : Izzatu Khoirul Fata / 24060124120039
+ *Tanggal         : 5 Mei 2026
+ */
+
 class Piaraan {
     // Kamus
     private int nbelm;

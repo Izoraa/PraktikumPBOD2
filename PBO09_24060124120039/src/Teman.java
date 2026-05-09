@@ -1,3 +1,11 @@
+/**
+ * File         : Teman.java
+ * Deskripsi    : Berisi Class Teman beserta atribut dan methodenya
+ *Nama/NIM      : Izzatu Khoirul Fata / 24060124120039
+ *Tanggal       : 5 Mei 2026
+ */
+
+
 import java.util.*;
 
 class Teman<T> {

@@ -30,12 +30,15 @@ public class MainTeman {
         t.setNama(1, "Ijat");
         t.showTeman();
 
+        System.out.println("Apakah nama Hasta ada :");
         System.out.println(t.isMember("Hasta"));
+        System.out.println("Ada Berapa Nama Isan : ");
         System.out.println(t.countNama("Isan"));
 
         t.gantiNama("Hasta", "Wildan");
         t.showTeman();
 
+        System.out.println("Hapus nama : ");
         t.delNama("Isan");
         t.showTeman();
     }

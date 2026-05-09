@@ -1,12 +1,12 @@
 import java.util.*;
 
-class Teman<T>{
+class Teman<T> {
     private int nbelm;
-    private ArrayList<T> Lnama;
+    private T[] Lnama;
 
     public Teman() {
         nbelm = 0;
-        Lnama = new ArrayList<>();
+        Lnama = (T[]) new Object[100];
     }
 
     public int getNbelm() {
@@ -14,63 +14,53 @@ class Teman<T>{
     }
 
     public T getNama(int indeks) {
-        return Lnama.get(indeks);
+        return Lnama[indeks];
     }
 
     public void setNama(int indeks, T nama) {
-        Lnama.set(indeks, nama);
+        Lnama[indeks] = nama;
     }
 
     public void addNama(T nama) {
-        setNama(nbelm, nama);
+        Lnama[nbelm] = nama;
         nbelm++;
     }
 
     public void delNama(T nama) {
-        if(nbelm != 0){
-            for(int i = 0; i < nbelm; i++){
-                if (getNama(i) == nama) {
-                    for(int j = i; j < nbelm -2; j++)
-                        setNama(j, getNama(j+1));
+        for (int i = 0; i < nbelm; i++) {
+            if (Lnama[i] == nama) {
+                for (int j = i; j < nbelm - 1; j++) {
+                    Lnama[j] = Lnama[j + 1];
                 }
+                Lnama[nbelm - 1] = null;
+                nbelm--;
+                i--;
             }
-            nbelm--;
         }
     }
 
-    public boolean isMember(T nama){
-        boolean member = false;
-        if(nbelm !=0){
-            for(int i; i < nbelm -1; i++){
-                if(getNama(i) == nama){
-                    member = true;
-                }
+    public boolean isMember(T nama) {
+        for (int i = 0; i < nbelm; i++) {
+            if (Lnama[i] == nama) {
+                return true;
             }
         }
-        else{
-            member = false;
-        }
-        return member;
+        return false;
     }
 
     public void gantiNama(T nama, T namabaru) {
-        if(isMember(nama)){
-            for(int i = 0; i < nbelm; i++){
-                if(getNama(i) == nama){
-                    setNama(i, namabaru);
-                }
+        for (int i = 0; i < nbelm; i++) {
+            if (Lnama[i] == nama) {
+                Lnama[i] = namabaru;
             }
         }
     }
 
-
-    public int countNama(T nama){
+    public int countNama(T nama) {
         int count = 0;
-        if (isMember(nama) == true) {
-            for(int i = 0; i < nbelm; i++){
-                if(getNama(i) == nama){
-                    count++;
-                }
+        for (int i = 0; i < nbelm; i++) {
+            if (Lnama[i] == nama) {
+                count++;
             }
         }
         return count;
@@ -78,7 +68,7 @@ class Teman<T>{
 
     public void showTeman() {
         for (int i = 0; i < nbelm; i++) {
-            System.out.println(getNama(i));
+            System.out.println(Lnama[i]);
         }
     }
 }
